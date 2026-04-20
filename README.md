@@ -5,9 +5,9 @@
 ❗️Exclamation Marks ❗️indicate action items; you should remove these emoji as you complete/update the items which 
   they accompany. (This means that your final README should have no ❗️in it!)
 
-❗️**Author(s)**: Your name(s) here
+**Author(s)**: Briana Nshimirimana, Alicia Bacani, Catalina Gonzalez Molina
 
-❗️**Google Doc Link**: Your link here
+**Google Doc Link**: https://docs.google.com/document/d/11g5x7LPXIePmf0ZSQTababjXhH9a_7n19E9Ui3MhEjg/edit?usp=sharing
 
 ---
 
@@ -15,7 +15,8 @@
 
 ❗️**Title**: `What is the title of your project? Be creative! Replace this block of text.`
 
-❗**Purpose**: `In a single sentence, describe WHAT your project will do. Replace this block of text.`
+**Purpose**: This program is meant to take in users tasks and due dates and keep track of progress made. When task completed
+at certain times (e.g.on time or early) user will receive a token of sort to celebrate the completion.
 
 ❗️**Source Assignment(s)**: `List which original assignments you will base your project on? Replace this block of text.`
 
@@ -31,13 +32,14 @@
 
 ❗️**Branches**: This project will **require** effective use of git. 
 
-❗Each partner should create a branch at the beginning of the project, and stay on this branch (or branches of their 
+Each partner should create a branch at the beginning of the project, and stay on this branch (or branches of their 
 branch) as they work. When you need to bring each others branches together, do so by merging each other's branches 
 into your own, following the process we've discussed in previous assignments, then re-branching out from the merged code.  
 
 ```
-    Branch 1 starting name: _____________
+    Branch 1 starting name: nshimirimanao-bacania-gonzalezmolinam  ---> Bri's Branch
     Branch 2 starting name: _____________
+    Branch 3 starting name: _____________
 ```
 
 ### References 
