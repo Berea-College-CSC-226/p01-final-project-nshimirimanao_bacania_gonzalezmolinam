@@ -13,14 +13,14 @@
 
 ## Milestone 1: Setup, Planning, Design
 
-❗️**Title**: `Berea Busy`
+**Title**: `Berea Busy`
 
 **Purpose**: This program is meant to take in users tasks and due dates and keep track of progress made. When task completed
 at certain times (e.g.on time or early) user will receive a token of sort to celebrate the completion.
 
 ️**Source Assignment(s)**: `T08: Deep vs. Shallow Copy`
 
-❗️**CRC Card(s)**:
+**CRC Card(s)**:
   - Create a CRC card for each class that your project will implement.
   - See this link for a sample CRC card and a template to use for your own cards (you will have to make a copy to edit):
     [CRC Card Example](https://docs.google.com/document/d/1JE_3Qmytk_JGztRqkPXWACJwciPH61VCx3idIlBCVFY/edit?usp=sharing)
