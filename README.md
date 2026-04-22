@@ -5,7 +5,7 @@
 ❗️Exclamation Marks ❗️indicate action items; you should remove these emoji as you complete/update the items which 
   they accompany. (This means that your final README should have no ❗️in it!)
 
-**Author(s)**: Briana Nshimirimana, Alicia Bacani, Catalina Gonzalez Molina
+**Author(s)**: Briana Nshimirimana, Alicia Bacani, Mildred Catalina Gonzalez Molina
 
 **Google Doc Link**: https://docs.google.com/document/d/11g5x7LPXIePmf0ZSQTababjXhH9a_7n19E9Ui3MhEjg/edit?usp=sharing
 
@@ -42,7 +42,7 @@ into your own, following the process we've discussed in previous assignments, th
 
 ```
     Branch 1 starting name: nshimirimanao-bacania-gonzalezmolinam  ---> Bri's Branch
-    Branch 2 starting name: _____________
+    Branch 2 starting name: gonzalezmolinam-nb-ab    ----> Catalina's branch
     Branch 3 starting name: _____________
 ```
 
