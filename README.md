@@ -13,12 +13,12 @@
 
 ## Milestone 1: Setup, Planning, Design
 
-❗️**Title**: `What is the title of your project? Be creative! Replace this block of text.`
+❗️**Title**: `Berea Busy`
 
 **Purpose**: This program is meant to take in users tasks and due dates and keep track of progress made. When task completed
 at certain times (e.g.on time or early) user will receive a token of sort to celebrate the completion.
 
-❗️**Source Assignment(s)**: `List which original assignments you will base your project on? Replace this block of text.`
+️**Source Assignment(s)**: `T08: Deep vs. Shallow Copy`
 
 ❗️**CRC Card(s)**:
   - Create a CRC card for each class that your project will implement.
@@ -28,7 +28,11 @@ at certain times (e.g.on time or early) user will receive a token of sort to cel
     README. You can do this by saving an image in the repository and linking to it. See the sample CRC card below - 
     and REPLACE it with your own:
   
-![Don't leave me in your README!](image/crc.png "Image of CRC card as an example. Upload your CRC card(s) in place of this one. ")
+![Don't leave me in your README!](image/crc1.png "Image of CRC card 1.")
+
+![Don't leave me in your README!](image/crc2.png "Image of CRC card 2.")
+
+![Don't leave me in your README!](image/crc3.png "Image of CRC card 3.")
 
 ❗️**Branches**: This project will **require** effective use of git. 
 
