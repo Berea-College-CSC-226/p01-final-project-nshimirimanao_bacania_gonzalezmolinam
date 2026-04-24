@@ -17,6 +17,12 @@ class Create_GUi:
         self.input["Name"] = tk.Entry(self.window)
         self.input["Name"].pack()
 
+        self.input["Due date"] = tk.Entry(self.window)
+        self.input["Due date"].pack()
+
+        self.input["Turned in"] = tk.Entry(self.window)
+        self.input["Turned in"].pack()
+
         self.output_label = tk.Label(self.window, text="")
         self.output_label.pack()
 
@@ -24,8 +30,14 @@ class Create_GUi:
         self.window.mainloop()
 
     def get_input(self):
+        name = self.input["Name"].get()
+        due = self.input["Due date"].get()
+        turned_in = self.input["Turned in"].get()
 
-        pass
+        if not self.validate.check_none([name,due,turned_in]):
+            self.display_output("There seems to be something missing, make sure you fill in everything.")
+            return
+
     def display_output(self):
 
         pass
