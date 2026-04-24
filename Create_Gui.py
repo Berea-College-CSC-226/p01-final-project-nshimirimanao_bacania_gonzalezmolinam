@@ -10,9 +10,9 @@ class Create_GUi:
        # self.validate = Valid_input()
 
     def create_window(self):
-        self.window = tk.TK()
+        self.window = tk.Tk()
         self.window.title("Berea Busy")
-        self.window.size(800,800)
+        self.window.geometry("800x800")
 
         self.input["Name"] = tk.Entry(self.window)
         self.input["Name"].pack()
@@ -38,13 +38,27 @@ class Create_GUi:
             self.display_output("There seems to be something missing, make sure you fill in everything.")
             return
 
-    def display_output(self):
+        if not self.validate.validate_userinput(due, turned_in):
+            self.display_output("Wrong format")
+            return
 
-        pass
+        the_task = Task(name, due, turned_in)
+
+        self.tracker.add_task(the_task)
+
+        self.display_output("Your task was added successfully :) !")
+
+    def display_output(self,message):
+
+        self.output_label.config(text=message)
+
     def create_button(self):
-        pass
 
-   ## def main():
-        ##pass
-   ## main()
+        self.buttons["add"] = tk.Button (self.window, text = "Add New Task", command=self.get_input)
+        self.buttons["add"].pack()
+
+if __name__ == "__main__":
+
+    BBApp = Create_GUi()
+    BBApp.create_window()
 
