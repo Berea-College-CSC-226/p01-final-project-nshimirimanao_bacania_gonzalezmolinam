@@ -15,8 +15,6 @@
 #         for i, task in enumerate(self.assignments, start=1):
 #             print(f'{i}. {task}')
 
-
-
 import tkinter as tk
 from tkinter import messagebox
 
