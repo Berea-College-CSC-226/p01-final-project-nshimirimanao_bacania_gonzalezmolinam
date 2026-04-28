@@ -42,7 +42,7 @@ into your own, following the process we've discussed in previous assignments, th
 
 ```
     Branch 1 starting name: nshimirimanao-bacania-gonzalezmolinam  ---> Bri's Branch
-    Branch 2 starting name: bacania-nshimirimanao-gonzalezmolinam  ---> Alicia's branch
+    Branch 2 starting name: _____________
     Branch 3 starting name: _____________
 ```
 
