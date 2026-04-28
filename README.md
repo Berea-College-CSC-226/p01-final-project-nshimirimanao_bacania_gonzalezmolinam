@@ -5,21 +5,22 @@
 ❗️Exclamation Marks ❗️indicate action items; you should remove these emoji as you complete/update the items which 
   they accompany. (This means that your final README should have no ❗️in it!)
 
-❗️**Author(s)**: Your name(s) here
+**Author(s)**: Briana Nshimirimana, Alicia Bacani, Catalina Gonzalez Molina
 
-❗️**Google Doc Link**: Your link here
+**Google Doc Link**: https://docs.google.com/document/d/11g5x7LPXIePmf0ZSQTababjXhH9a_7n19E9Ui3MhEjg/edit?usp=sharing
 
 ---
 
 ## Milestone 1: Setup, Planning, Design
 
-❗️**Title**: `What is the title of your project? Be creative! Replace this block of text.`
+**Title**: `Berea Busy`
 
-❗**Purpose**: `In a single sentence, describe WHAT your project will do. Replace this block of text.`
+**Purpose**: This program is meant to take in users tasks and due dates and keep track of progress made. When task completed
+at certain times (e.g.on time or early) user will receive a token of sort to celebrate the completion.
 
-❗️**Source Assignment(s)**: `List which original assignments you will base your project on? Replace this block of text.`
+️**Source Assignment(s)**: `T08: Deep vs. Shallow Copy`
 
-❗️**CRC Card(s)**:
+**CRC Card(s)**:
   - Create a CRC card for each class that your project will implement.
   - See this link for a sample CRC card and a template to use for your own cards (you will have to make a copy to edit):
     [CRC Card Example](https://docs.google.com/document/d/1JE_3Qmytk_JGztRqkPXWACJwciPH61VCx3idIlBCVFY/edit?usp=sharing)
@@ -27,17 +28,22 @@
     README. You can do this by saving an image in the repository and linking to it. See the sample CRC card below - 
     and REPLACE it with your own:
   
-![Don't leave me in your README!](image/crc.png "Image of CRC card as an example. Upload your CRC card(s) in place of this one. ")
+![Don't leave me in your README!](image/crc1.png "Image of CRC card 1.")
+
+![Don't leave me in your README!](image/crc2.png "Image of CRC card 2.")
+
+![Don't leave me in your README!](image/crc3.png "Image of CRC card 3.")
 
 ❗️**Branches**: This project will **require** effective use of git. 
 
-❗Each partner should create a branch at the beginning of the project, and stay on this branch (or branches of their 
+Each partner should create a branch at the beginning of the project, and stay on this branch (or branches of their 
 branch) as they work. When you need to bring each others branches together, do so by merging each other's branches 
 into your own, following the process we've discussed in previous assignments, then re-branching out from the merged code.  
 
 ```
-    Branch 1 starting name: _____________
-    Branch 2 starting name: _____________
+    Branch 1 starting name: nshimirimanao-bacania-gonzalezmolinam  ---> Bri's Branch
+    Branch 2 starting name: bacania_p01-branch
+    Branch 3 starting name: _____________
 ```
 
 ### References 
@@ -45,7 +51,7 @@ into your own, following the process we've discussed in previous assignments, th
 ❗Throughout this project, you will likely use outside resources. Reference all ideas which are not your own, 
 and describe how you integrated the ideas or code into your program. This includes online sources, people who have 
 helped you, AI tools you've used, and any other resources that are not solely your own contribution. Update this 
-section as you go. DO NOT forget about it!
+section as you go. DO NOT forget about it! 
 
 ---
 
