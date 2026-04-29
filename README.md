@@ -18,7 +18,7 @@
 **Purpose**: This program is meant to take in users tasks and due dates and keep track of progress made. When task completed
 at certain times (e.g.on time or early) user will receive a token of sort to celebrate the completion.
 
-️**Source Assignment(s)**: `T08: Deep vs. Shallow Copy`
+️**Source Assignment(s)**: `T08: Deep vs. Shallow Copy, Pygame (Taco cat & Tuna), `
 
 **CRC Card(s)**:
   - Create a CRC card for each class that your project will implement.
