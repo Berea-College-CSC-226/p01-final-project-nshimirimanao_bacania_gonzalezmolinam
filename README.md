@@ -34,7 +34,7 @@ at certain times (e.g.on time or early) user will receive a token of sort to cel
 
 ![Don't leave me in your README!](image/crc3.png "Image of CRC card 3.")
 
-❗️**Branches**: This project will **require** effective use of git. 
+️**Branches**: This project will **require** effective use of git. 
 
 Each partner should create a branch at the beginning of the project, and stay on this branch (or branches of their 
 branch) as they work. When you need to bring each others branches together, do so by merging each other's branches 
@@ -43,8 +43,7 @@ into your own, following the process we've discussed in previous assignments, th
 ```
     Branch 1 starting name: nshimirimanao-bacania-gonzalezmolinam  ---> Bri's Branch
     Branch 2 starting name: bacania_p01-branch
-    Branch 2 starting name: gonzalezmolinam-nb-ab    ----> Catalina's branch
-    Branch 3 starting name: _____________
+    Branch 3 starting name: gonzalezmolinam-nb-ab    ----> Catalina's branch
 ```
 
 ### References 
@@ -58,29 +57,33 @@ section as you go. DO NOT forget about it!
 
 ## Milestone 2: Code Setup and Issue Queue
 
-❗Most importantly, keep your issue queue up to date, and focus on your code. 🙃
+Most importantly, keep your issue queue up to date, and focus on your code. 🙃
 
-❗Reflect on what you’ve done so far. How’s it going? Are you feeling behind/ahead? What are you worried about? 
+Reflect on what you’ve done so far. How’s it going? Are you feeling behind/ahead? What are you worried about? 
 What has surprised you so far? Describe your general feelings. Be honest with yourself; this section is for you, not me.
 
 ```
-    **Replace this text with your reflection
+    The project idea was is going well but implementation is where we run into issues. Just trying to stay focused and 
+    ground feasible tasks and not getting distracted by ideas we get along the way. We feel somewhat on track, we just need
+    to work to blending each other's code together for a more uniformed and working code.
 ```
 
 ---
 
 ## Milestone 3: Virtual Check-In
 
-❗Indicate what percentage of the project you have left to complete and how confident you feel. 
+Indicate what percentage of the project you have left to complete and how confident you feel. 
 
-❗️**Completion Percentage**: `0 - 100%`
+**Completion Percentage**: `40-45`
 
-❗️**Confidence**: Describe how confident you feel about completing this project, and why. Then, describe some 
+️**Confidence**: Describe how confident you feel about completing this project, and why. Then, describe some 
   strategies you can employ to increase the likelihood that you'll be successful in completing this project 
   before the deadline.
 
 ```
-    **Replace this with your reflection
+    The reason we scored low was because we had issues with git but after resolving the issues we feel confident to 
+    get at least or main idea ready for presentation by Sunday. We have each others code we worked on separately and combined
+    it. Now we are changing things within for everything to run cohesively and tweak parts we may need to remove or expand on.
 ```
 
 ---
@@ -110,6 +113,10 @@ deficiencies that remain in your code. Bugs found that aren't acknowledged in th
 
 ```
     Partner 1: **Replace this with your reflection
+```
+
+```
+    Partner 2: **Replace this with your reflection
 ```
 
 ```
