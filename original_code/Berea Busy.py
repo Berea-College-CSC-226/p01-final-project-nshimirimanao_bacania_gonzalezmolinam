@@ -10,7 +10,7 @@ class Create_GUi:
 
         self.tracker = TrackTasks()
         self.validate = valid_input()
-        self.assignment = Task(name,duedate,done)
+
 
     def create_window(self):
         self.window = tk.Tk()
@@ -23,33 +23,30 @@ class Create_GUi:
         self.input["Due date"] = tk.Entry(self.window)
         self.input["Due date"].pack()
 
-        self.input["Turned in"] = tk.Entry(self.window)
-        self.input["Turned in"].pack()
-
         self.output_label = tk.Label(self.window, text="")
         self.output_label.pack()
 
         self.create_button()
         self.window.mainloop()
 
-   # def get_input(self):
-        #name = self.input["Name"].get()
-        #due = self.input["Due date"].get()
-        #turned_in = self.input["Turned in"].get()
+    def add_task(self):
+        name = self.input["Name"].get()
+        due = self.input["Due date"].get()
+       # done = self.input["Turned in"].get()
 
-        #if not self.validate.check_none([name,due,turned_in]):
-            #self.display_output("There seems to be something missing, make sure you fill in everything.")
-            #return
+        if not self.validate.check_none([name,due]):
+            self.display_output("There seems to be something missing, make sure you fill in everything.")
+            return
 
-        #if not self.validate.validate_userinput(due, turned_in):
-            #self.display_output("Wrong format")
-            #return
+        if not self.validate.validate_userinput(due):
+            self.display_output("Wrong format")
+            return
 
-        #the_task = Task(name, due, turned_in)
+        task = Task(name, due, done)
 
-        #self.tracker.add_task(the_task)
+        self.tracker.add_task(task)
 
-        #self.display_output("Your task was added successfully :) !")
+        self.display_output("Another task for the busy bee!")
 
     def display_output(self,message):
 
@@ -69,14 +66,16 @@ class Task:
     """
 
     def __init__(self, name, duedate,done):    #This is the task object
-        self.name=name
-        self.duedate=duedate
-        self.done=done
+        self.name = name
+        self.duedate = duedate
+        self.done = done
         self.time = None
+        self.points = 0
 
 
 
         self.find_state()
+        self.reward_system()
 
     def find_state(self):
         """
