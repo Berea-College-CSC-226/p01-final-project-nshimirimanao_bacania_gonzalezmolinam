@@ -1,7 +1,8 @@
 import tkinter as tk
 import re
+import time # added on 05.01.26
 
-class Create_GUi:
+class Create_GUI:
 
     def __init__(self):
         self.window = None
@@ -65,14 +66,12 @@ class Task:
     such as the name, the due date and when it was submitted)
     """
 
-    def __init__(self, name, duedate,done):    #This is the task object
+    def __init__(self, name, duedate, done):    #This is the task object
         self.name = name
         self.duedate = duedate
         self.done = done
         self.time = None
         self.points = 0
-
-
 
         self.find_state()
         self.reward_system()
@@ -101,7 +100,6 @@ class Task:
 
         else:
             self.points=-5
-
 
 
     def user_info(self):
@@ -150,5 +148,5 @@ class TrackTasks:
 
 if __name__ == "__main__":
 
-    BBApp = Create_GUi()
+    BBApp = Create_GUI()
     BBApp.create_window()

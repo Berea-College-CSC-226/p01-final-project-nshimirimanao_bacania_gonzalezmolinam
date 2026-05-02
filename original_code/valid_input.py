@@ -17,3 +17,6 @@ class valid_input:
         else:
             self.task_name = task_name
             return task_name
+
+        return task_name
+

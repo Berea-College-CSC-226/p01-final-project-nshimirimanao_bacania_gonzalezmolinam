@@ -42,7 +42,7 @@ into your own, following the process we've discussed in previous assignments, th
 
 ```
     Branch 1 starting name: nshimirimanao-bacania-gonzalezmolinam  ---> Bri's Branch
-    Branch 2 starting name: bacania_p01-branch
+    Branch 2 starting name: bacania_part2-P01
     Branch 3 starting name: gonzalezmolinam-nb-ab    ----> Catalina's branch
 ```
 
@@ -52,6 +52,15 @@ into your own, following the process we've discussed in previous assignments, th
 and describe how you integrated the ideas or code into your program. This includes online sources, people who have 
 helped you, AI tools you've used, and any other resources that are not solely your own contribution. Update this 
 section as you go. DO NOT forget about it! 
+
+- import re is being used for formatting the time, duedate, and the name of assignment (taken from 
+- google ai frontpage: https://stackoverflow.com/questions/54700710/how-to-get-the-countdown-date-to-display-correctly-using-python-3)
+
+- import time was something we were already aware of in terms of sleep, but now we have also referenced this to 
+- ensure due dates are set and met. (also from google ai front page:https://stackoverflow.com/questions/54700710/how-to-get-the-countdown-date-to-display-correctly-using-python-3 )
+
+- tkinter ONLY centering code was from a website: https://www.geeksforgeeks.org/python/python-gui-tkinter/
+- from datetime import datetime, timedelta (taken from google ai front page: https://realpython.com/python-datetime/)
 
 ---
 
