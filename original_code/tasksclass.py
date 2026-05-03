@@ -1,3 +1,6 @@
+
+from datetime import datetime, timedelta
+
 class Task:
 
     """
@@ -5,15 +8,22 @@ class Task:
     such as the name, the due date and when it was submitted)
     """
 
-    def __init__(self, name, duedate,done):    #This is the task object
+    def __init__(self, name, duedate_str,done_str):    #This is the task object
         self.name=name
         self.duedate=duedate
         self.done=done
         self.time = None
 
 
+        self.name
+        self.duedate = datetime.strptime(duedate_str,  "%m-%d-%Y %H:%M")
+        self.done = datetime.strptime(done_str,  "%m-%d-%Y %H:%M")
+
+        self.status = None
+        self.points = 0
 
         self.find_state()
+        self.reward_system()
 
     def find_state(self):
         """
@@ -45,7 +55,8 @@ class Task:
     def user_info(self):
         return (
             f"Assignment: {self.name}\n"
-            f"Due Date: {self.duedate}\n"
-            f"Submitted: {self.turnedin}\n"
-            f"Status: {self.time}\n"
+            f"Due Date: {self.duedate.strftime("%m-%d-%Y %H:%M")}\n"
+            f"Submitted: {self.done.strftime("%m-%d-%Y %H:%M")}\n"
+            f"Status: {self.status}\n"
+            f"Points Earned: {self.points}\n"
         )
