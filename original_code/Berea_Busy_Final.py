@@ -10,10 +10,8 @@ class Create_GUi:
        self.buttons = {}
        self.input = {}
 
-
        # self.tracker = Track_tasks()
        # self.validate = Valid_input()
-
 
    def create_window(self):
        self.window = tk.Tk()
