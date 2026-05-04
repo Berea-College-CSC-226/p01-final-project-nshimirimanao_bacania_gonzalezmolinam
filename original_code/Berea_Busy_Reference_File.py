@@ -204,7 +204,7 @@ class TaskTrackerGUI:
 
         for _ in range(80):
             x = random.randint(0, width)
-            y = random.randint(-300, 0)
+            y = random.randint(-height, 0)
             item = canvas.create_text(x, y, text=random.choice(["🎉", "✨", "🎊"]))
             dx = random.uniform(-2, 2)
             dy = random.uniform(3, 7)
