@@ -1,4 +1,5 @@
-# referencing chatgpt by asking it to add " how would you make this into a program that tracks homework assignments,
+# referencing chatgpt by asking it to add " using our code as reference how would you advise us to modify our code to
+# effectively make this into a program that tracks homework assignments,
 # has a timer to make sure they're being submitted on time, include a reward system, ensure valid input is being given,
 # and has a checkmark box that can separate the ones that are to be completed and the ones that are done with the rewards
 # being + 10 points if early, + 5 points if on time, -5 points if late. Here is the code: (Berea Busy Final.py)"
