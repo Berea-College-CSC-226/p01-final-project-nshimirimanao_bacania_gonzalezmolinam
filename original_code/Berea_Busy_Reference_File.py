@@ -223,7 +223,7 @@ class TaskTrackerGUI:
 if __name__ == "__main__":
     app = TaskTrackerGUI()
 
-    # test run
+    # test ru
     # 05/03/2026 12:59
 
     # 05/03/2026 12:30
