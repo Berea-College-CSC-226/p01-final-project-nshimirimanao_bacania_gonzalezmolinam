@@ -80,7 +80,9 @@ class HomeworkTrackerGUI:
         self.create_window()
 
     def create_window(self):
-        title = tk.Label(self.window, text="Berea Busy Task Tracker", font=("Helvetica", 22))
+        self.window.config(bg="lightblue") #makes background blue #found reference code from python guide https://pythonguides.com/tkinter-frame-background-color/
+
+        title = tk.Label(self.window, text="Berea Busy Task Tracker", font=("Helvetica", 22), bg="lightblue")
         title.pack(pady=10)
 
         form_frame = tk.Frame(self.window)
@@ -97,7 +99,7 @@ class HomeworkTrackerGUI:
         add_button = tk.Button(form_frame, text="Add Assignment", command=self.add_task)
         add_button.grid(row=2, column=0, columnspan=2, pady=10)
 
-        self.points_label = tk.Label(self.window, text="Total Points: 0", font=("Arial", 16))
+        self.points_label = tk.Label(self.window, text="Total Points: 0", font=("Arial", 16),bg="lightblue")
         self.points_label.pack(pady=10)
 
         sections_frame = tk.Frame(self.window)
