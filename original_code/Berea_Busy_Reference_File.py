@@ -75,7 +75,7 @@ for efficiency and accuracy when referring back to different components of the p
 """
 
 
-class HomeworkTrackerGUI:
+class TaskTrackerGUI:
     def __init__(self):
         self.window = tk.Tk()
         self.window.title("Berea Busy")
@@ -219,7 +219,7 @@ class HomeworkTrackerGUI:
 
 
 if __name__ == "__main__":
-    app = HomeworkTrackerGUI()
+    app = TaskTrackerGUI()
 
     # test run
     # 05/03/2026 12:59
