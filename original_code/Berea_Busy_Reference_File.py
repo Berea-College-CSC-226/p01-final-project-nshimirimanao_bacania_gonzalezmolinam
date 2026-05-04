@@ -192,7 +192,8 @@ class TaskTrackerGUI:
         self.refresh_tasks()
         self.window.after(1000, self.update_timer)
 
-
+# Used Ai on advising how use the canvas in order to add confetti to the screen and have it appeared as the user submits
+# the task
     def show_confetti(self, complete_task):
         canvas = tk.Canvas(self.window, highlightthickness=0)
         canvas.place(relx=0, rely=0, relwidth=1, relheight=1)
