@@ -62,6 +62,8 @@ section as you go. DO NOT forget about it!
 - tkinter ONLY centering code was from a website: https://www.geeksforgeeks.org/python/python-gui-tkinter/
 - from datetime import datetime, timedelta (taken from google ai front page: https://realpython.com/python-datetime/)
 
+- #found reference code from python guide https://pythonguides.com/tkinter-frame-background-color/
+
 -
 ---
 

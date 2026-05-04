@@ -9,9 +9,9 @@ class Task:
     """
 
     def __init__(self, name, duedate_str,done_str):    #This is the task object
-        self.name=name
-        self.duedate=duedate
-        self.done=done
+        self.name = name
+        self.duedate = duedate
+        self.done = done
         self.time = None
 
 

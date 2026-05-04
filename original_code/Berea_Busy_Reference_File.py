@@ -7,7 +7,11 @@ import tkinter as tk
 from tkinter import messagebox
 from datetime import datetime
 import re
+import random
 
+"""
+creates our task class for everything
+"""
 
 class Task:
     def __init__(self, name, due_date):
@@ -48,6 +52,9 @@ class Task:
 
         return f"{days}d {hours}h {minutes}m {seconds}s left"
 
+"""
+This program helps make sure the user is formatting the dates and assignments correctly.
+"""
 
 class ValidInput:
     @staticmethod
@@ -60,6 +67,12 @@ class ValidInput:
             return datetime.strptime(date_text, "%m/%d/%Y %H:%M")
         except ValueError:
             return None
+
+"""
+This creates the UI screen. 
+We decided to connect any and all needed components of our program into a singular GUI class
+for efficiency and accuracy when referring back to different components of the program.
+"""
 
 
 class HomeworkTrackerGUI:
@@ -141,7 +154,10 @@ class HomeworkTrackerGUI:
             task.mark_done()
             self.total_points += task.points
             self.points_label.config(text=f"Total Points: {self.total_points}")
+            self.show_confetti(task)
+
             self.refresh_tasks()
+
 
     def refresh_tasks(self):
         for widget in self.todo_frame.winfo_children():
@@ -174,6 +190,32 @@ class HomeworkTrackerGUI:
     def update_timer(self):
         self.refresh_tasks()
         self.window.after(1000, self.update_timer)
+
+
+    def show_confetti(self, complete_task):
+        canvas = tk.Canvas(self.window, highlightthickness=0)
+        canvas.place(relx=0, rely=0, relwidth=1, relheight=1)
+
+        pieces = []
+        width = self.window.winfo_width()
+        height = self.window.winfo_height()
+
+        for _ in range(80):
+            x = random.randint(0, width)
+            y = random.randint(-300, 0)
+            item = canvas.create_text(x, y, text=random.choice(["🎉", "✨", "🎊"]))
+            dx = random.uniform(-2, 2)
+            dy = random.uniform(3, 7)
+            pieces.append((item, dx, dy))
+
+        def animate():
+            for item, dx, dy in pieces:
+                canvas.move(item, dx, dy)
+            canvas.after(40, animate)
+
+        animate()
+        self.window.after(3000, canvas.destroy)
+
 
 
 if __name__ == "__main__":
