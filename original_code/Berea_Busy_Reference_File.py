@@ -57,11 +57,11 @@ This program helps make sure the user is formatting the dates and assignments co
 """
 
 class ValidInput:
-    @staticmethod
+    @staticmethod #validation helper methods
     def valid_name(name):
         return name.strip() != "" and re.match(r"^[A-Za-z0-9 ]+$", name)
 
-    @staticmethod
+    @staticmethod #validation helper methods
     def valid_due_date(date_text):
         try:
             return datetime.strptime(date_text, "%m/%d/%Y %H:%M")
