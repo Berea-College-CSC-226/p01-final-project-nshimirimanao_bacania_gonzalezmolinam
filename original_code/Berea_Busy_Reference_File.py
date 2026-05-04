@@ -80,7 +80,7 @@ class HomeworkTrackerGUI:
         self.create_window()
 
     def create_window(self):
-        title = tk.Label(self.window, text="Berea Busy Task Tracker", font=("Arial", 22))
+        title = tk.Label(self.window, text="Berea Busy Task Tracker", font=("Helvetica", 22))
         title.pack(pady=10)
 
         form_frame = tk.Frame(self.window)

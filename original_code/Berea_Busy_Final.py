@@ -1,47 +1,8 @@
 import tkinter as tk
 import re
-import time #using this for clock as a timer
-
-class Create_GUi:
-
-
-   def __init__(self):
-       self.window = None
-       self.buttons = {}
-       self.input = {}
-
-       # self.tracker = Track_tasks()
-       # self.validate = Valid_input()
-
-   def create_window(self):
-       self.window = tk.Tk()
-       self.window.title("Berea Busy")
-       self.window.geometry("800x800")
-
-
-       '''
-       This is going to make the frame be in the center
-       '''
-
-
-       center_frame = tk.Frame(self.window)
-       center_frame.pack(expand=True)
-
-       self.output_label = tk.Label(center_frame, text="Name")
-       self.output_label.pack()
-
-       self.input["Name"] = tk.Entry(center_frame, text="Name")
-       self.input["Name"].pack()
-
-       self.output_label = tk.Label(center_frame, text="Due date")
-       self.output_label.pack()
-
-       self.input["Due date"] = tk.Entry(center_frame)
-       self.input["Due date"].pack()
-
-       self.window.mainloop()
-
 from datetime import datetime, timedelta
+
+
 
 class Task:
 
@@ -118,7 +79,8 @@ class valid_input(Task):
             self.task_name = task_name
             return task_name
 
-class TrackTasks(Task, Create_GUi):
+
+class TrackTasks(Task):
     def __init__(self):
         self.assignments = []
 
@@ -134,6 +96,67 @@ class TrackTasks(Task, Create_GUi):
     def display_tasks(self):
         for i, task in enumerate(self.assignments, start=1):
             print(f"{i}.{task}")
+
+class Create_GUi:
+
+
+   def __init__(self):
+       self.window = None
+       self.buttons = {}
+       self.input = {}
+
+       # self.tracker = Track_tasks()
+       # self.validate = Valid_input()
+
+   def create_window(self):
+       self.window = tk.Tk()
+       self.window.title("Berea Busy")
+       self.window.geometry("800x800")
+
+
+       '''
+       This is going to make the frame be in the center
+       '''
+
+
+       center_frame = tk.Frame(self.window)
+       center_frame.pack(expand=True)
+
+       form_frame = tk.Frame(self.window)
+       form_frame.pack(pady=10)
+
+       self.output_label = tk.Label(center_frame, text="Name")
+       self.output_label.pack()
+
+       self.input["Name"] = tk.Entry(center_frame, text="Name")
+       self.input["Name"].pack()
+
+       self.output_label = tk.Label(center_frame, text="Due date")
+       self.output_label.pack()
+
+       self.input["Due date"] = tk.Entry(center_frame)
+       self.input["Due date"].pack()
+
+       sections_frame = tk.Frame(self.window)
+       sections_frame.pack(fill="both", expand=True, padx=20, pady=10)
+
+       self.todo_frame = tk.LabelFrame(sections_frame, text="To Be Completed", font=("Arial", 14))
+       self.todo_frame.pack(side="left", fill="both", expand=True, padx=10)
+
+       self.done_frame = tk.LabelFrame(sections_frame, text="Done", font=("Arial", 14))
+       self.done_frame.pack(side="right", fill="both", expand=True, padx=10)
+
+       add_button = tk.Button(form_frame, text="Add Assignment", command=self.add_task)
+       add_button.grid(row=2, column=0, columnspan=2, pady=10)
+
+       self.window.mainloop()
+
+   def add_task(self,task):
+       self.assignments.append(task)
+
+
+
+
 
 if __name__ == "__main__":
 
