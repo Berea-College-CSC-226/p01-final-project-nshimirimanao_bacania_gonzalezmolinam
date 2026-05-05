@@ -30,7 +30,7 @@ class Task:
         if self.completed_time < self.due_date:
             self.state = "Early"
             self.points = +10
-        elif self.completed_time == self.due_date.date():
+        elif self.completed_time == self.due_date:
             self.state = "On Time"
             self.points = +5
         else:
