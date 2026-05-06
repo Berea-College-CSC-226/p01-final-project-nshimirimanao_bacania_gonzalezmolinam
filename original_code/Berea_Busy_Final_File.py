@@ -4,11 +4,11 @@
 # and has a checkmark box that can separate the ones that are to be completed and the ones that are done with the rewards
 # being + 10 points if early, + 5 points if on time, -5 points if late. Here is the code: (Berea Busy Final.py)"
 
-import tkinter as tk
-from tkinter import messagebox
-from datetime import datetime
-import re
-import random
+import tkinter as tk # Gui library
+from tkinter import messagebox # imported for popup error messages
+from datetime import datetime # used to track date and time
+import re # Regular expression >> used to validate text input in this case
+import random # used for the confetti animation method
 
 """
 creates our task class for everything
@@ -77,22 +77,25 @@ for efficiency and accuracy when referring back to different components of the p
 
 
 class TaskTrackerGUI:
+    """
+
+    """
     def __init__(self):
         self.window = tk.Tk()
         self.window.title("Berea Busy")
         self.window.geometry("900x700")
-        self.window.minsize(width= 800, height= 800) #stops the screen from being resized smaller than this.
+        self.window.minsize(width= 800, height= 800) #stops the screen from being resized smaller than this
 
         self.tasks = []
         self.total_points = 0
 
-        self.name_entry = None
+        self.name_entry = None # These are "placeholders" for widgets
         self.date_entry = None
         self.todo_frame = None
         self.done_frame = None
-        self.points_label = None
+        self.points_label = None #^
 
-        self.create_window()
+        self.create_window() # Builds the UI
 
     def create_window(self):
         self.window.config(bg="lightblue") #makes background blue #found reference code from python guide https://pythonguides.com/tkinter-frame-background-color/
@@ -103,15 +106,15 @@ class TaskTrackerGUI:
         form_frame = tk.Frame(self.window)
         form_frame.pack(pady=10)
 
-        tk.Label(form_frame, text="Assignment Name").grid(row=0, column=0, padx=5, pady=5)
-        self.name_entry = tk.Entry(form_frame, width=30)
+        tk.Label(form_frame, text="Assignment Name").grid(row=0, column=0, padx=5, pady=5) #assignment name label
+        self.name_entry = tk.Entry(form_frame, width=30)  #entry box for assignment name
         self.name_entry.grid(row=0, column=1, padx=5, pady=5)
 
         tk.Label(form_frame, text="Due Date: MM/DD/YYYY HH:MM").grid(row=1, column=0, padx=5, pady=5)
         self.date_entry = tk.Entry(form_frame, width=30)
         self.date_entry.grid(row=1, column=1, padx=5, pady=5)
 
-        add_button = tk.Button(form_frame, text="Add Assignment", command=self.add_task)
+        add_button = tk.Button(form_frame, text="Add Assignment", command=self.add_task) # calls add_task() when button [Add Assignment] is clicked.
         add_button.grid(row=2, column=0, columnspan=2, pady=10)
 
         self.points_label = tk.Label(self.window, text="Total Points: 0", font=("Arial", 16),bg="lightblue")
