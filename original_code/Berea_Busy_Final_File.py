@@ -149,6 +149,7 @@ class TaskTrackerGUI:
         task = Task(name, due_date)
         self.tasks.append(task)
 
+
         self.name_entry.delete(0, tk.END)
         self.date_entry.delete(0, tk.END)
 
