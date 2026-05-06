@@ -81,6 +81,7 @@ class TaskTrackerGUI:
         self.window = tk.Tk()
         self.window.title("Berea Busy")
         self.window.geometry("900x700")
+        self.window.minsize(width= 800, height= 800) #stops the screen from being resized smaller than this.
 
         self.tasks = []
         self.total_points = 0
