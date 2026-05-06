@@ -90,7 +90,7 @@ Indicate what percentage of the project you have left to complete and how confid
 
 ️**Confidence**: Describe how confident you feel about completing this project, and why. Then, describe some 
   strategies you can employ to increase the likelihood that you'll be successful in completing this project 
-  before the deadline.
+  before the deadline.   
 
 ```
     The reason we scored low was because we had issues with git but after resolving the issues we feel confident to 
