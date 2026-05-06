@@ -132,7 +132,12 @@ deficiencies that remain in your code. Bugs found that aren't acknowledged in th
 ```
 
 ```
-    Partner 2: **Replace this with your reflection
+    Partner 2: I selected this project because I wanted to create something useful for college or business settings, specifically, a tool that could help people manage their time in their daily lives while also encouraging them to stay motivated and keep working hard. 
+    Our final project reflected our initial design very closely; we combined everyone’s ideas, and they fit together well, so the final product matched what we originally planned. As a well‑organized team, we were able to implement most of the features from our initial design.
+    Through this process, I learned how important it is to focus on design from the beginning: setting goals, dividing tasks, and creating a clear plan to follow. I also learned how essential it is to handle challenges without giving up when the code breaks unexpectedly, and instead analyze the problem and find a solution. 
+    Teamwork, communication, and reliability were also key—knowing each member’s strengths, asking for help when needed, working independently, and discussing changes helped prevent errors and encouraged brainstorming. I also learned to understand every bug and its solution so I can fix similar issues in the future. 
+    The hardest part of the final project was the technical challenges we faced, but thanks to help from our professor and our peer Nick, we were able to solve our branch problem. If I could do something differently next time, I would set aside more time to add additional features; because it was finals week, we didn’t have as much time as we wanted to develop more tools for our users. 
+    I worked well with both of my partners—I listened to them, completed my tasks responsibly and on time, and explained my changes. Our collaboration went smoothly, and we finished our product on schedule, even during a difficult week. The main challenge was simply the limited time we had to complete the project.
 ```
 
 ---
