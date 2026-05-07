@@ -200,7 +200,7 @@ class TaskTrackerGUI:
         due_date = ValidInput.valid_due_date(due_text)
 
         if due_date is None:
-            messagebox.showerror("Invalid Date", "Use this format: MM/DD/YYYY HH:MM")
+            messagebox.showerror("Invalid Date", "Use this format: MM/DD/YYYY HH:MM") #Shows popup error message if formatting/input is wrong
             return
 
         task = Task(name, due_date)
@@ -225,8 +225,8 @@ class TaskTrackerGUI:
 
             if not task.done:
                 task.mark_done()
-                self.total_points += task.points
-                self.points_label.config(text=f"Total Points: {self.total_points}")
+                self.total_points += task.points                                           # updates score
+                self.points_label.config(text=f"Total Points: {self.total_points}")        # display
                 self.show_confetti(task)
 
         else:
@@ -237,7 +237,7 @@ class TaskTrackerGUI:
             task.completed_time = None
             self.points_label.config(text=f"Total Points: {self.total_points}")
 
-        self.refresh_tasks()
+        self.refresh_tasks() #updates UI when task is completed
 
     def refresh_tasks(self):
         for widget in self.todo_scroll_frame.winfo_children(): # trying to unchceck
@@ -257,7 +257,7 @@ class TaskTrackerGUI:
                     self.done_scroll_frame,
                     text=text,
                     variable=var,
-                    command=lambda t=task, v=var: self.toggle_task(t, v),
+                    command=lambda t=task, v=var: self.toggle_task(t, v),                   # checks and unchecks tasks when clicked
                     anchor="w",
                     justify="left"
                 )
@@ -273,7 +273,7 @@ class TaskTrackerGUI:
                     self.todo_scroll_frame,
                     text=text,
                     variable=var,
-                    command=lambda t=task, v=var: self.toggle_task(t, v),
+                    command=lambda t=task, v=var: self.toggle_task(t, v),                  # checks and unchecks tasks when clicked
                     anchor="w",
                     justify="left"
                 )
