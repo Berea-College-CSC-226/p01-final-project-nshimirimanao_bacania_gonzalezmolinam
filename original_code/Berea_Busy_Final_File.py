@@ -175,7 +175,14 @@ class TaskTrackerGUI:
         for task in self.tasks:
             if task.done:
                 text = f"✓ {task.name}\n{task.state}: {task.points} points"
-                label = tk.Label(self.done_frame, text=text, anchor="w", justify="left")
+                label = tk.Label(
+                    self.done_scroll_frame,
+                    text=text,
+                    anchor="w",
+                    justify="left",
+                    wraplength=300 #let's the frames to be the same lenght
+                )
+
                 label.pack(fill="x", padx=10, pady=5)
             else:
                 var = tk.IntVar()
@@ -183,12 +190,13 @@ class TaskTrackerGUI:
                 text = f"{task.name}\nDue: {task.due_date.strftime('%m/%d/%Y %H:%M')}\n{task.time_left()}"
 
                 checkbox = tk.Checkbutton(
-                    self.todo_frame,
+                    self.todo_scroll_frame,
                     text=text,
                     variable=var,
                     command=lambda t=task: self.complete_task(t),
                     anchor="w",
-                    justify="left"
+                    justify="left",
+                    wraplength=300  #avoids the frame to get bigger
                 )
 
                 checkbox.pack(fill="x", padx=10, pady=5)
