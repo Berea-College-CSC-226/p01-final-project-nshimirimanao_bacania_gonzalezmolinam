@@ -63,8 +63,7 @@ section as you go. DO NOT forget about it!
 - from datetime import datetime, timedelta (taken from google ai front page: https://realpython.com/python-datetime/)
 
 - #found reference code from python guide https://pythonguides.com/tkinter-frame-background-color/
-
--
+- #found reference code from Stack Overflow to solve the frame size issue: https://stackoverflow.com/questions/55241150/tkinter-wraplength-units-is-pixels
 ---
 
 ## Milestone 2: Code Setup and Issue Queue
