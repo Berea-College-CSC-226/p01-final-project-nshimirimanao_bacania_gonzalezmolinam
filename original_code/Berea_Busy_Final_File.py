@@ -10,11 +10,12 @@ from datetime import datetime # used to track date and time
 import re # Regular expression >> used to validate text input in this case
 import random # used for the confetti animation method
 
-"""
-creates our task class for everything
-"""
+
 
 class Task:
+    """
+    creates our task class for everything
+    """
     def __init__(self, name, due_date):
         self.name = name
         self.due_date = due_date
@@ -53,11 +54,11 @@ class Task:
 
         return f"{days}d {hours}h {minutes}m {seconds}s left"
 
-"""
-This program helps make sure the user is formatting the dates and assignments correctly.
-"""
 
 class ValidInput:
+    """
+    This program helps make sure the user is formatting the dates and assignments correctly.
+    """
     @staticmethod #validation helper method
     def valid_name(name):
         return name.strip() != "" and re.match(r"^[A-Za-z0-9 ]+$", name)
