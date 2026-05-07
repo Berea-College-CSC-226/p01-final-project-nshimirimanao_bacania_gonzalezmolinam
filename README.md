@@ -64,6 +64,8 @@ section as you go. DO NOT forget about it!
 
 - #found reference code from python guide https://pythonguides.com/tkinter-frame-background-color/
 
+- asked ChatGPT to help with scrollbar and check & uncheck. (only referenced and used what I needed)
+
 -
 ---
 
@@ -105,13 +107,19 @@ Indicate what percentage of the project you have left to complete and how confid
 ### ❗User Instructions
 
 ❗In a paragraph, explain how to use your program. Assume the user is starting just after they hit the "Run" button 
-in PyCharm. 
+in PyCharm.
 
-### ❗Errors and Constraints
+1. User hits run
+2. User inputs the name of assignment NOT EXCEEDING THE 100 CHAR LIMIT
+3. User inputs the date and time of the assignment due IN MILITARY TIME
+4. User clicks add task 
+5. Once task is completed, user checkmarks
+    ~ if user accidentally checks an assignment, it is possible to uncheck and points will go back
+      to original program
 
-❗Every program has bugs or features that had to be scrapped for time. These bugs should be tracked in the issue queue. 
-You should already have a few items in here from the prior weeks. Create a new issue for any undocumented errors and 
-deficiencies that remain in your code. Bugs found that aren't acknowledged in the queue will be penalized.
+### Errors and Constraints
+
+issue queue is updated
 
 ### ❗Reflection
 
@@ -124,7 +132,16 @@ deficiencies that remain in your code. Bugs found that aren't acknowledged in th
 - How well did you work with your partner? What made it go well? What made it challenging?
 
 ```
-    Partner 1: **Replace this with your reflection
+    Partner 1: I liked this project lots! I feel like it taught me more about GUIs as I though that python was strictly a 
+    backend language. I also learned more about how errors can help user experiences. We all collectively chose this 
+    idea because we wanted to have a site that can still be utilized beyond this class alone. As for comparing this
+    design to the original, it definitely is not the same. This because we didn't take into account connecting different 
+    classes, and different libraries that can fix the issue more efficiently. The hardest part of the final process was 
+    having all of our files complied into one. This is because we all had & referred to everything differently so the 
+    syntax was a hassle. Next time I would communicate all of the class names, attributes, and delegate specfic times to 
+    meet to ensure that we are working in person. That way, we would not have to work remotely and can communicate any 
+    questions directlty. Our partners were fine, it was challenging at some points but nothing we couldn't get through. 
+    Overall fun experience, 10/10 would def recommend. 
 ```
 
 ```
@@ -132,12 +149,23 @@ deficiencies that remain in your code. Bugs found that aren't acknowledged in th
 ```
 
 ```
-    Partner 2: I selected this project because I wanted to create something useful for college or business settings, specifically, a tool that could help people manage their time in their daily lives while also encouraging them to stay motivated and keep working hard. 
-    Our final project reflected our initial design very closely; we combined everyone’s ideas, and they fit together well, so the final product matched what we originally planned. As a well‑organized team, we were able to implement most of the features from our initial design.
-    Through this process, I learned how important it is to focus on design from the beginning: setting goals, dividing tasks, and creating a clear plan to follow. I also learned how essential it is to handle challenges without giving up when the code breaks unexpectedly, and instead analyze the problem and find a solution. 
-    Teamwork, communication, and reliability were also key—knowing each member’s strengths, asking for help when needed, working independently, and discussing changes helped prevent errors and encouraged brainstorming. I also learned to understand every bug and its solution so I can fix similar issues in the future. 
-    The hardest part of the final project was the technical challenges we faced, but thanks to help from our professor and our peer Nick, we were able to solve our branch problem. If I could do something differently next time, I would set aside more time to add additional features; because it was finals week, we didn’t have as much time as we wanted to develop more tools for our users. 
-    I worked well with both of my partners—I listened to them, completed my tasks responsibly and on time, and explained my changes. Our collaboration went smoothly, and we finished our product on schedule, even during a difficult week. The main challenge was simply the limited time we had to complete the project.
+    Partner 2: I selected this project because I wanted to create something useful for college or business settings, 
+    specifically, a tool that could help people manage their time in their daily lives while also encouraging them to 
+    stay motivated and keep working hard. Our final project reflected our initial design very closely; we combined 
+    everyone’s ideas, and they fit together well, so the final product matched what we originally planned. As a well‑
+    organized team, we were able to implement most of the features from our initial design. Through this process, I 
+    learned how important it is to focus on design from the beginning: setting goals, dividing tasks, and creating a 
+    clear plan to follow. I also learned how essential it is to handle challenges without giving up when the code breaks
+    unexpectedly, and instead analyze the problem and find a solution. Teamwork, communication, and reliability were 
+    also key—knowing each member’s strengths, asking for help when needed, working independently, and discussing changes
+    helped prevent errors and encouraged brainstorming. I also learned to understand every bug and its solution so I can
+    fix similar issues in the future. The hardest part of the final project was the technical challenges we faced, but 
+    thanks to help from our professor and our peer Nick, we were able to solve our branch problem. If I could do 
+    something differently next time, I would set aside more time to add additional features; because it was finals week,
+    we didn’t have as much time as we wanted to develop more tools for our users. I worked well with both of my partners
+    —I listened to them, completed my tasks responsibly and on time, and explained my changes. Our collaboration went 
+    smoothly, and we finished our product on schedule, even during a difficult week. The main challenge was simply the 
+    limited time we had to complete the project.
 ```
 
 ---
