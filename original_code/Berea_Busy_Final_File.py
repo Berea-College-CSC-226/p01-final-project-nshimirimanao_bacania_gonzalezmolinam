@@ -281,8 +281,8 @@ class TaskTrackerGUI:
                 checkbox.pack(fill="x", padx=10, pady=5)
 
     def update_timer(self):
-        self.refresh_tasks()
-        self.window.after(1000, self.update_timer)
+        self.refresh_tasks()                               # keep countdown live because
+        self.window.after(1000, self.update_timer)     # it runs every second
 
 # Used Ai on advising how use the canvas in order to add confetti to the screen and have it appeared as the user submits
 # the task
@@ -308,12 +308,12 @@ class TaskTrackerGUI:
             canvas.after(40, animate)
 
         animate()
-        self.window.after(3000, canvas.destroy)
+        self.window.after(3000, canvas.destroy) # removes confetti after 3 seconds
 
 
 if __name__ == "__main__":
     """
-    makes everything come together 
+    Calls the TaskTrackerGUI() class which then starts running the whole app
     """
     app = TaskTrackerGUI()
 
