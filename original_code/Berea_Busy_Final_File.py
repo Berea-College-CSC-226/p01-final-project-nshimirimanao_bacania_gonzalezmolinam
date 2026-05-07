@@ -190,6 +190,10 @@ class TaskTrackerGUI:
         name = self.name_entry.get()
         due_text = self.date_entry.get()
 
+        if len(name) > 100:
+            messagebox.showerror("Too Long", "Assignment name must be 100 characters or less.")
+            return
+
         if not ValidInput.valid_name(name):
             messagebox.showerror("Invalid Input", "Assignment name cannot be empty and can only use letters, numbers, and spaces.")
             return
