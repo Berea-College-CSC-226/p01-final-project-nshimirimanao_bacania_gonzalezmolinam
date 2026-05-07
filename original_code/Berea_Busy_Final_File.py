@@ -69,15 +69,12 @@ class ValidInput:
         except ValueError:
             return None
 
-"""
-This creates the UI screen. 
-We decided to connect any and all needed components of our program into a singular GUI class
-for efficiency and accuracy when referring back to different components of the program.
-"""
 
 class TaskTrackerGUI:
     """
-
+    This creates the UI screen.
+    We decided to connect any and all needed components of our program into a singular GUI class
+    for efficiency and accuracy when referring back to different components of the program.
     """
     def __init__(self):
         self.window = tk.Tk()
@@ -183,8 +180,8 @@ class TaskTrackerGUI:
         self.done_canvas.pack(side="left", fill="both", expand=True)
         done_scrollbar.pack(side="right", fill="y") # end
 
-        self.update_timer()
-        self.window.mainloop()
+        self.update_timer() # Starts an automatic refresh when an input is given by the user
+        self.window.mainloop() # this runs the Gui forever
 
     def add_task(self):
         name = self.name_entry.get()
@@ -194,6 +191,7 @@ class TaskTrackerGUI:
             messagebox.showerror("Too Long", "Assignment name must be 100 characters or less.")
             return
 
+        # shows popup error messages when format submitted is wrong or if invalid.
         if not ValidInput.valid_name(name):
             messagebox.showerror("Invalid Input", "Assignment name cannot be empty and can only use letters, numbers, and spaces.")
             return
