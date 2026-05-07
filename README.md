@@ -69,7 +69,7 @@ section as you go. DO NOT forget about it!
 -
 ---
 
-## Milestone 2: Code Setup and Issue Queue
+## Milestone 2: Code Setup and Issue Queue 
 
 Most importantly, keep your issue queue up to date, and focus on your code. 🙃
 
