@@ -75,7 +75,6 @@ We decided to connect any and all needed components of our program into a singul
 for efficiency and accuracy when referring back to different components of the program.
 """
 
-
 class TaskTrackerGUI:
     """
 
@@ -94,6 +93,11 @@ class TaskTrackerGUI:
         self.todo_frame = None
         self.done_frame = None
         self.points_label = None #^
+
+        self.todo_canvas = None # creating canvas to implement scrolling
+        self.done_canvas = None
+        self.todo_scroll_frame = None
+        self.done_scroll_frame = None # end change
 
         self.create_window() # Builds the UI
 
@@ -126,8 +130,58 @@ class TaskTrackerGUI:
         self.todo_frame = tk.LabelFrame(sections_frame, text="To Be Completed", font=("Arial", 14))
         self.todo_frame.pack(side="left", fill="both", expand=True, padx=10)
 
+        self.todo_canvas = tk.Canvas(self.todo_frame)  # this allows for scrolling on tobecompleted
+        todo_scrollbar = tk.Scrollbar(
+            self.todo_frame,
+            orient="vertical",
+            command=self.todo_canvas.yview
+        )
+        self.todo_scroll_frame = tk.Frame(self.todo_canvas)
+
+        self.todo_scroll_frame.bind(
+            "<Configure>",
+            lambda e: self.todo_canvas.configure(
+                scrollregion=self.todo_canvas.bbox("all")
+            )
+        )
+
+        self.todo_canvas.create_window(
+            (0, 0),
+            window=self.todo_scroll_frame,
+            anchor="nw"
+        )
+        self.todo_canvas.configure(yscrollcommand=todo_scrollbar.set)
+
+        self.todo_canvas.pack(side="left", fill="both", expand=True)
+        todo_scrollbar.pack(side="right", fill="y")
+
         self.done_frame = tk.LabelFrame(sections_frame, text="Done", font=("Arial", 14))
-        self.done_frame.pack(side="right", fill="both", expand=True, padx=10)
+        self.done_frame.pack(side="right", fill="both", expand=True, padx=10) # end
+
+        self.done_canvas = tk.Canvas(self.done_frame) # allows for scrolling on done
+        done_scrollbar = tk.Scrollbar(
+            self.done_frame,
+            orient="vertical",
+            command=self.done_canvas.yview
+        )
+        self.done_scroll_frame = tk.Frame(self.done_canvas)
+
+        self.done_scroll_frame.bind(
+            "<Configure>",
+            lambda e: self.done_canvas.configure(
+                scrollregion=self.done_canvas.bbox("all")
+            )
+        )
+
+        self.done_canvas.create_window(
+            (0, 0),
+            window=self.done_scroll_frame,
+            anchor="nw"
+        )
+        self.done_canvas.configure(yscrollcommand=done_scrollbar.set)
+
+        self.done_canvas.pack(side="left", fill="both", expand=True)
+        done_scrollbar.pack(side="right", fill="y") # end
 
         self.update_timer()
         self.window.mainloop()
@@ -165,16 +219,22 @@ class TaskTrackerGUI:
 
 
     def refresh_tasks(self):
-        for widget in self.todo_frame.winfo_children():
+
+        for widget in self.todo_scroll_frame.winfo_children(): #implemented for scrolling
             widget.destroy()
 
-        for widget in self.done_frame.winfo_children():
+        for widget in self.done_scroll_frame.winfo_children(): #implemented for scrolling
             widget.destroy()
 
         for task in self.tasks:
             if task.done:
                 text = f"✓ {task.name}\n{task.state}: {task.points} points"
-                label = tk.Label(self.done_frame, text=text, anchor="w", justify="left")
+                label = tk.Label(    # implemented for scrolling
+                    self.done_scroll_frame,
+                    text=text,
+                    anchor="w",
+                    justify="left"
+                ) # end
                 label.pack(fill="x", padx=10, pady=5)
             else:
                 var = tk.IntVar()
@@ -182,7 +242,7 @@ class TaskTrackerGUI:
                 text = f"{task.name}\nDue: {task.due_date.strftime('%m/%d/%Y %H:%M')}\n{task.time_left()}"
 
                 checkbox = tk.Checkbutton(
-                    self.todo_frame,
+                    self.todo_scroll_frame,
                     text=text,
                     variable=var,
                     command=lambda t=task: self.complete_task(t),
@@ -222,6 +282,9 @@ class TaskTrackerGUI:
         animate()
         self.window.after(3000, canvas.destroy)
 
+"""
+makes everything come together 
+"""
 
 
 if __name__ == "__main__":
