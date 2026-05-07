@@ -2,9 +2,6 @@
 
 ## Instructions
 
-❗️Exclamation Marks ❗️indicate action items; you should remove these emoji as you complete/update the items which 
-  they accompany. (This means that your final README should have no ❗️in it!)
-
 **Author(s)**: Briana Nshimirimana, Alicia Bacani, Mildred Catalina Gonzalez Molina
 
 **Google Doc Link**: https://docs.google.com/document/d/11g5x7LPXIePmf0ZSQTababjXhH9a_7n19E9Ui3MhEjg/edit?usp=sharing
@@ -21,18 +18,11 @@ at certain times (e.g.on time or early) user will receive a token of sort to cel
 ️**Source Assignment(s)**: `T08: Deep vs. Shallow Copy, Pygame (Taco cat & Tuna), Events & GUIs `
 
 **CRC Card(s)**:
-  - Create a CRC card for each class that your project will implement.
-  - See this link for a sample CRC card and a template to use for your own cards (you will have to make a copy to edit):
-    [CRC Card Example](https://docs.google.com/document/d/1JE_3Qmytk_JGztRqkPXWACJwciPH61VCx3idIlBCVFY/edit?usp=sharing)
-  - Tables in markdown are not easy, so we suggest saving your CRC card as an image and including the image(s) in the 
-    README. You can do this by saving an image in the repository and linking to it. See the sample CRC card below - 
-    and REPLACE it with your own:
-  
-![Don't leave me in your README!](image/crc1.png "Image of CRC card 1.")
+![CRCcard!](image/crc1.png "Image of CRC card 1.")
 
-![Don't leave me in your README!](image/crc2.png "Image of CRC card 2.")
+![CRCcard!](image/crc2.png "Image of CRC card 2.")
 
-![Don't leave me in your README!](image/crc3.png "Image of CRC card 3.")
+![CRCcard!](image/crc3.png "Image of CRC card 3.")
 
 ️**Branches**: This project will **require** effective use of git. 
 
@@ -48,7 +38,7 @@ into your own, following the process we've discussed in previous assignments, th
 
 ### References 
 
-❗Throughout this project, you will likely use outside resources. Reference all ideas which are not your own, 
+Throughout this project, you will likely use outside resources. Reference all ideas which are not your own, 
 and describe how you integrated the ideas or code into your program. This includes online sources, people who have 
 helped you, AI tools you've used, and any other resources that are not solely your own contribution. Update this 
 section as you go. DO NOT forget about it! 
@@ -105,19 +95,19 @@ Indicate what percentage of the project you have left to complete and how confid
 
 ## Milestone 4: Final Code, Presentation, Demo
 
-### ❗User Instructions
+### User Instructions
 
-User hits run User inputs the name of assignment NOT EXCEEDING THE 100 CHAR LIMIT User inputs the date and time of the 
-assignment due IN MILITARY TIME User clicks add task Once task is completed, user checkmarks if user accidentally checks
+User hits run. User inputs the name of assignment NOT EXCEEDING THE 100 CHAR LIMIT. User inputs the date and time of the 
+assignment due IN MILITARY TIME. User clicks add task Once task is completed, user checkmarks if user accidentally checks
 an assignment, it is possible to uncheck and points will go back to original program.
 
 ### Errors and Constraints
 
 issue queue is updated
 
-### ❗Reflection
+### Reflection
 
-❗Each partner should write three to four well-written paragraphs address the following (at a minimum):
+Each partner should write three to four well-written paragraphs address the following (at a minimum):
 - Why did you select the project that you did?
 - How closely did your final project reflect your initial design?
 - What did you learn from this process?
@@ -126,7 +116,7 @@ issue queue is updated
 - How well did you work with your partner? What made it go well? What made it challenging?
 
 ```
-    Partner 1: I liked this project lots! I feel like it taught me more about GUIs as I though that python was strictly a 
+    Alicia: I liked this project lots! I feel like it taught me more about GUIs as I though that python was strictly a 
     backend language. I also learned more about how errors can help user experiences. We all collectively chose this 
     idea because we wanted to have a site that can still be utilized beyond this class alone. As for comparing this
     design to the original, it definitely is not the same. This because we didn't take into account connecting different 
@@ -139,11 +129,32 @@ issue queue is updated
 ```
 
 ```
-    Partner 2: **Replace this with your reflection
+    Bri: We chose this assignment because we wanted a program that was one relatable and two can be expanded beyond
+    this course. I would say if we were to compare or final project to our initial design it differs in some ways. I would say
+    our initial design divided things that should've been together and also our final project had additions we decided to 
+    make along the way to best support our overall idea and make it more engaging. 
+    
+    The top three things I learned from this process was the application of GUI's, Class relationships, and new library 
+    usage that I haven't used previously (re). While I learned a lot I did still face challenges. The hardest part of 
+    the final project for me was connecting all of our files into one single file that worked with no issue. There were
+    a lot of bugs because of slight changes in name of methods, classes, or other aspects.
+    
+    If I were to do this again a few things I would do differently, is work with each other in person more so in the 
+    beginning that way we can have a clearer idea of names we will use in our codes so it works correctly. I would also
+    make comments outside of git and in our chosen communication so everyone is up to date with the changes in the 
+    branches. I would also do a check in to see how we are feeling about our team's dynamic and our project that way any 
+    issues that arise can be addressed.
+    
+    We were able to sucessfully complete a project that could be demoed in class. I will be honest while we did complete
+    our tasks there were some points where it was a bit difficult. I would say communication played a part in that but we
+    did over come our challenges and were able to push out a nice little tracker program. There were even times
+    I would revert to things I learned in teamworking like a driver, navigator, and quality control if a section needed
+    all three of us to work on it. Also, the freedom to as for help when needed or even offer up possible ideas for debugging
+    was nice. Overall this experience was enriching.
 ```
 
 ```
-    Partner 2: I selected this project because I wanted to create something useful for college or business settings, 
+    Catalina: I selected this project because I wanted to create something useful for college or business settings, 
     specifically, a tool that could help people manage their time in their daily lives while also encouraging them to 
     stay motivated and keep working hard. Our final project reflected our initial design very closely; we combined 
     everyone’s ideas, and they fit together well, so the final product matched what we originally planned. As a well‑

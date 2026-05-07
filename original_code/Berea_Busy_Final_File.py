@@ -14,7 +14,7 @@ import random # used for the confetti animation method
 
 class Task:
     """
-    creates our task class for everything
+    creates our task class
     """
     def __init__(self, name, due_date):
         self.name = name
