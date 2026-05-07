@@ -217,27 +217,52 @@ class TaskTrackerGUI:
 
             self.refresh_tasks()
 
+    def toggle_task(self, task, var):
+        if var.get() == 1:
+
+            if not task.done:
+                task.mark_done()
+                self.total_points += task.points
+                self.points_label.config(text=f"Total Points: {self.total_points}")
+                self.show_confetti(task)
+
+        else:
+            self.total_points -= task.points
+            task.done = False
+            task.state = "To Do"
+            task.points = 0
+            task.completed_time = None
+            self.points_label.config(text=f"Total Points: {self.total_points}")
+
+        self.refresh_tasks()
 
     def refresh_tasks(self):
-
-        for widget in self.todo_scroll_frame.winfo_children(): #implemented for scrolling
+        for widget in self.todo_scroll_frame.winfo_children(): # trying to unchceck
             widget.destroy()
 
-        for widget in self.done_scroll_frame.winfo_children(): #implemented for scrolling
+        for widget in self.done_scroll_frame.winfo_children():
             widget.destroy()
 
         for task in self.tasks:
+
             if task.done:
+                var = tk.IntVar(value=1)
+
                 text = f"✓ {task.name}\n{task.state}: {task.points} points"
-                label = tk.Label(    # implemented for scrolling
+
+                checkbox = tk.Checkbutton(
                     self.done_scroll_frame,
                     text=text,
+                    variable=var,
+                    command=lambda t=task, v=var: self.toggle_task(t, v),
                     anchor="w",
                     justify="left"
-                ) # end
-                label.pack(fill="x", padx=10, pady=5)
+                )
+
+                checkbox.pack(fill="x", padx=10, pady=5)
+
             else:
-                var = tk.IntVar()
+                var = tk.IntVar(value=0)
 
                 text = f"{task.name}\nDue: {task.due_date.strftime('%m/%d/%Y %H:%M')}\n{task.time_left()}"
 
@@ -245,7 +270,7 @@ class TaskTrackerGUI:
                     self.todo_scroll_frame,
                     text=text,
                     variable=var,
-                    command=lambda t=task: self.complete_task(t),
+                    command=lambda t=task, v=var: self.toggle_task(t, v),
                     anchor="w",
                     justify="left"
                 )
@@ -282,12 +307,11 @@ class TaskTrackerGUI:
         animate()
         self.window.after(3000, canvas.destroy)
 
-"""
-makes everything come together 
-"""
-
 
 if __name__ == "__main__":
+    """
+    makes everything come together 
+    """
     app = TaskTrackerGUI()
 
     # test run
