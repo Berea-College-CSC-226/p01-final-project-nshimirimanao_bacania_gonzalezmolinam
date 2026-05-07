@@ -264,6 +264,15 @@ class TaskTrackerGUI:
 
                 checkbox.pack(fill="x", padx=10, pady=5)
 
+                label = tk.Label(
+                    self.done_scroll_frame,
+                    text=text,
+                    anchor="w",
+                    justify="left",
+                    wraplength=300 #let's the frames to be the same lenght
+                )
+
+                label.pack(fill="x", padx=10, pady=5)
             else:
                 var = tk.IntVar(value=0)
 
@@ -275,7 +284,8 @@ class TaskTrackerGUI:
                     variable=var,
                     command=lambda t=task, v=var: self.toggle_task(t, v),                  # checks and unchecks tasks when clicked
                     anchor="w",
-                    justify="left"
+                    justify="left",
+                    wraplength=300  #avoids the frame to get bigger
                 )
 
                 checkbox.pack(fill="x", padx=10, pady=5)
