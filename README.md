@@ -107,10 +107,9 @@ Indicate what percentage of the project you have left to complete and how confid
 
 ### ❗User Instructions
 
-❗In a paragraph, explain how to use your program. Assume the user is starting just after they hit the "Run" button 
-in PyCharm. 
-
-### ❗Errors and Constraints
+User hits run User inputs the name of assignment NOT EXCEEDING THE 100 CHAR LIMIT User inputs the date and time of the 
+assignment due IN MILITARY TIME User clicks add task Once task is completed, user checkmarks if user accidentally checks
+an assignment, it is possible to uncheck and points will go back to original program.
 
 ### Errors and Constraints
 
